@@ -32,3 +32,11 @@ Ben to run the plugin himself where noted.
 - `get_screenshot` shows the resting frame only. To check motion use `export_video` and sample a few frames, small and low quality first; it is slow.
 - Durations: UI feedback 100-300 ms, larger transitions 300-500 ms, nothing blocking over 400 ms (Doherty). Ease-out on enter, ease-in on exit. Respect reduced-motion in anything that ships to code.
 - Custom animation styles cannot be authored through the API; say so rather than faking one.
+
+### Verified on Ben's account (2026-11-05)
+Motion is ENABLED. Working call shapes (tested on a scratch file):
+- Field is an OBJECT, not a string: `node.applyManualKeyframeTrack({ type: 'PROPERTY', name: 'TRANSLATION_X' }, { keyframes: [...] })`.
+- `SCALE_XY` needs VECTOR values: `{ type: 'VECTOR', value: { x: 1.4, y: 1.4 } }`; `TRANSLATION_X`/`SCALE_X` use FLOAT.
+- Omit `baseValue` on new tracks. Easing e.g. `{ type: 'EASE_OUT' }`, `{ type: 'EASE_IN_AND_OUT' }`.
+- Do not animate a top-level frame; animate its children. Default timeline is 2 s; extend with `setTimelineDuration`.
+- First-party animation styles available: text_stagger, position, scale, rotation, size, opacity, path.
