@@ -59,6 +59,10 @@ pricing...), `capture_live_site`, `analyze_page_structure`, `record_site_motion`
 pull 3-5 relevant sites, look at the screenshots, then state what you are taking from each.
 Behance blocks the browser pane; Awwwards + its screenshots are the visual source instead.
 If the tools are not loaded, say so and continue with the written kits.
+Tested 2026-11-09: the server builds a local index on first run (195 category pages, ~1,080 sites
+after the first pass) and searches are partial until it finishes. Free-text queries work best with
+tags (`tags:["portfolio"], award:"sotd"`); "industrial design" matched nothing, so for ID work use it
+for site craft (layout, type, motion), not for ID project content. Image results arrive inline.
 
 ## 4. Ben's layer (every design, Figma or code)
 1. Tokens, not hardcodes: colour/spacing/radius/type bound to variables; token by intent.
@@ -98,6 +102,10 @@ actions, respect reduced motion.
   multi-style comparison page.
 - `kits/stageshow/` and `kits/dimensional-drawing/` include runnable HTML/JS templates and node
   scripts; read each KIT.md before running anything.
+- Dimensional drawing, tested: copy the head/styles (lines 1-82) and kit helpers (lines 126-149) of
+  `examples/card-sheet.html`, write only the drawing code, render in the browser pane at 1800 px.
+  Worked example from Ben's own design: `C:\PortolfioCareerAssests\Design Experiments\dimensional-drawings\project-card-UI-CARD-002.html`.
+  Write long HTML with the Write tool, not a bash heredoc (heredocs with quotes break here).
 
 ## 7. Verify before claiming done
 - Figma: screenshot each frame; check clipping/overflow; Laws of UX + contrast/target numbers.
