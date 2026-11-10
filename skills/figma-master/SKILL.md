@@ -106,6 +106,15 @@ actions, respect reduced motion.
   `examples/card-sheet.html`, write only the drawing code, render in the browser pane at 1800 px.
   Worked example from Ben's own design: `C:\PortolfioCareerAssests\Design Experiments\dimensional-drawings\project-card-UI-CARD-002.html`.
   Write long HTML with the Write tool, not a bash heredoc (heredocs with quotes break here).
+- Stageshow, tested (onn watch demo): copy `kits/stageshow` to a work folder (never `npm install`
+  inside the skill), add `examples/<name>/index.tsx`, run vite directly
+  (`node node_modules/vite/bin/vite.js playground --config playground/vite.config.ts --port 5191`;
+  the kit's `npm run dev` needs portless). The preview pane shows `?capture=` blank; judge with
+  `node scripts/film.mjs "<url>/?capture=<name>" --select '#example' --gate` (and `--width 390`)
+  and read the contact sheet. Loop until it prints `rehearsal passed`. Lessons: content may never be
+  cut by a moving edge (fade/lift pages instead of scrolling them), only the active page should exist
+  at rest, the cursor must end where it started, keep holds short.
+  Worked example: `C:\PortolfioCareerAssests\Design Experiments\stageshow-onn\examples\onn-watch\`.
 
 ## 7. Verify before claiming done
 - Figma: screenshot each frame; check clipping/overflow; Laws of UX + contrast/target numbers.
