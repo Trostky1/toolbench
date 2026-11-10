@@ -35,7 +35,11 @@ to "improve" it; propose instead.
 | Brand voice, guidelines, palette management | `kits/brand/references/` |
 | Banner, cover, social image, ad | Section 5 here; sizes in `kits/banner-design/references/banner-sizes-and-styles.md` |
 | Logo, icon set, CIP mockups (needs GEMINI_API_KEY) | `kits/design/KIT.md` |
-| Figma file work (screens, components, motion, plugins/assets) | Load the `figma-master` skill; it routes to the figma:* skills and adds Laws of UX |
+| Figma file work (screens, components, plugins/assets) | Load the `figma-master` skill; it routes to the figma:* skills and adds Laws of UX |
+| Visual direction / style options, Awwwards references | `figma-master` stages A-B (oil-ui, modern-frontend, Awwwards MCP) |
+| Any animation or motion (web, Expo, Figma), gestures, Apple-style polish | `figma-master` section 5 (Emil Kowalski canon) |
+| New brand identity (logo + type + palette, measured) | `figma-master` -> `kits/brand-identity` |
+| Product demo visuals, faux UI, spec/dimensional drawings | `figma-master` stage F (stageshow, dimensional-drawing) |
 | A small fix (spacing, one component, a color) | Rules in section 2 only. Don't run a kit. |
 
 Match the effort to the ask: a tweak gets a tweak, not a design system.

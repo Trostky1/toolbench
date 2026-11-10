@@ -6,7 +6,7 @@ one is active ("Using: <bucket>") and keeps tool-heavy material nested under `ki
 | Skill | Use it for |
 |---|---|
 | `design-ui` | How something looks and feels: pages, layout, type, color, motion, brand, design systems |
-| `figma-master` | Any Figma / FigJam / Slides work. Wraps the official Figma MCP skills, adds Laws of UX, ui-ux-pro-max taste, design-system gates, agent-driven motion and asset recipes |
+| `figma-master` | Design master: any Figma / FigJam / Slides work plus design craft everywhere: Awwwards references, visual direction (oil-ui, modern-frontend), motion (Emil Kowalski canon, motion-principles audits, Figma Motion), brand identity, stageshow product demos, dimensional spec drawings, reviews. Adds Laws of UX and plugin87 gates on top of the official Figma skills |
 | `build-code` | Making or changing working code |
 | `debug` | Something broken or wrong |
 | `review-ship` | Is it good / ready: reviews, audits, pre-launch checks |
@@ -21,3 +21,12 @@ Copy the folders in `skills/` into `~/.claude/skills/` (Windows: `C:\Users\<you>
 ## Notes
 - Built for Ben Trost's workflow; the design-ui and figma-master skills reference his portfolio style, adjust section 0 / 3 for yours.
 - Third-party material is vendored under `kits/` with its own licence. See `NOTICE.md`.
+
+## Optional MCP
+`figma-master` uses the Awwwards MCP for visual references. Add it once:
+
+```bash
+claude mcp add awwwards -- npx -y awwwards-mcp@1.18.0
+```
+
+On Windows use `cmd /c npx -y awwwards-mcp@1.18.0` as the command. `kits/brand-identity` needs Python with `pip install -r skills/figma-master/kits/brand-identity/requirements.txt`.
