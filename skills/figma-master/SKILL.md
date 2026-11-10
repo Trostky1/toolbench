@@ -37,8 +37,8 @@ Paths are relative to `C:\Users\bentr\.claude\skills\figma-master\`. Kit entry f
 | **G. Review** | "Is this good?", before shipping | `kits/emil/review-animations`, `kits/emil/break-ui` (worst-case data), `kits/motion-principles` audit mode, Laws of UX pass, `kits/plugin87/design-qa.md` + `critique.md`, `kits/oil-ui/references/reviewer-manual.md` |
 
 Typical full run: A -> B (recommend one direction, or a comparison page if asked) -> C -> D -> G.
-For an ID portfolio or product page, add F: a dimensional drawing and a stageshow-style hero beat
-generic renders on a grid.
+For Ben's ID portfolio, lead with his real renders, sketches, CAD and prototypes. Stageshow faux UI
+is off for his work (rejected 2026-11-09); dimensional drawings only when he asks.
 
 ## 2. Figma (the connector's rules, unchanged)
 1. `create_session` with the file key before any file tool.
@@ -114,7 +114,8 @@ actions, respect reduced motion.
   and read the contact sheet. Loop until it prints `rehearsal passed`. Lessons: content may never be
   cut by a moving edge (fade/lift pages instead of scrolling them), only the active page should exist
   at rest, the cursor must end where it started, keep holds short.
-  Worked example: `C:\PortolfioCareerAssests\Design Experiments\stageshow-onn\examples\onn-watch\`.
+  Ben rejected the onn watch demo (2026-11-09) as AI slop: do not make faux device/UI mockups of his
+  physical products, and do not offer stageshow for his portfolio unless he asks for it.
 
 ## 7. Verify before claiming done
 - Figma: screenshot each frame; check clipping/overflow; Laws of UX + contrast/target numbers.
